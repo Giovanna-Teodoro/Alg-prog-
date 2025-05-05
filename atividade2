@@ -1,0 +1,22 @@
+# Entrada: a primeira linha da entrada contém um inteiro M representando a idade de dona Mônica. A segunda linha da entrada contém um inteiro 
+# A representando a idade de um dos filhos. A terceira linha da entrada contém um inteiro B representando a idade de outro filho.
+#Saída: seu programa deve imprimir uma linha, contendo um número inteiro, representando a idade do filho mais velho de dona Mônica.
+# 
+
+
+#Leitura das idades 
+
+M= int(input()) #Idade da mãe
+F1= int(input()) #Idade do filho
+F2= int(input()) #idade do outro filho
+soma = F1 +F2 #soma das idades dos filhos
+F3= M - soma #subtrair da idade da mãe a soma de 2 filhos para identificar a idade do terceiro filho
+#comparação entre as idades para descobrir o filho mais velho
+if F1> F3 and F1> F2:
+    maior=F1 #Guardar a idade do filho 1 caso seja o mais velho
+if F2> F3 and F2>F1:
+    maior= F2 #Guardar a idade do filho 1 caso seja o mais velho
+if F3> F1 and F3> F2:
+    maior=F3 #Guardar a idade do filho 1 caso seja o mais velho
+
+print(maior) #impressão da idade do filho mais velho.
