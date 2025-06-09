@@ -1,0 +1,24 @@
+#Faça um programa que leia um vetor de n elementos reais e um número
+#real x. Em seguida, seu programa deve imprimir o valor e a posição
+#dos elementos que forem menores que x. Todos os números devem ter
+#no máximo uma casa decimal.
+
+#Entrada: A primeira linha da entrada contém um inteiro n.
+#Em seguida, são lidas n linhas com um número realcada.
+#Por fim, na terceira linha contém um número real x.
+
+#Saída: a saída deve conter todos os elementos menores do que x no
+#formato do exemplo.
+
+n=int(input())
+lista=[]
+maior=[]      
+
+for i in range(n):
+   lista.append(list(map(float,input().split())))
+for k in range(len(lista)):
+    if lista[2] > lista[k]:
+       maior.append(lista[k])
+for n in range (len(maior)):
+               print("L",[n],"=",maior[n])
+               
