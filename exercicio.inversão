@@ -1,0 +1,23 @@
+          
+#leitura do vetor
+
+lista= list(map(int, input().split()))
+
+#Inicializa a posição do primeiro elemento
+pos=0
+#Percorre o vetor verificando os elementos menores.
+for i in range (1, len(lista)):
+            #Verifica se o elemento é menor que a posição
+            if lista[i]<= lista[pos]:
+                #GUardar veor da lista [i]
+                num= lista[i]
+                j=i
+            #Enquanto não chegou na posição do primeiro elemento do vetor original
+                while (j>pos):
+                     lista[j]=lista[j-1]
+                     j=j-1
+                lista[pos]=num
+                pos+=1 #Atualiza a posição do primeiro elemento
+#impresão
+for i in range(len(lista)):
+            print(lista[i], end=" ")
