@@ -1,0 +1,16 @@
+def calcula_dobro(num):
+    num=num*2
+    return num
+
+#leitura do número
+
+x=int(input())
+
+print(id(x))
+#calcula dobro
+dobro=calcula_dobro(x)
+
+#imrprime o dobro
+print(dobro)
+
+print('x',x)

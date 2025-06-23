@@ -1,0 +1,21 @@
+def verifica_primo(num):
+    if num==1:
+        return False
+    if num==2:
+        return True
+    for i in range(2,num//2+1):
+        if num%i==0:
+            return False
+    return True    
+            
+
+
+nu=int(input())
+
+#leitura se o número é primo
+
+if verifica_primo(nu):
+   print(nu,"é primo")
+
+else:
+    print(nu,"não é primo")
